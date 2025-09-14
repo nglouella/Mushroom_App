@@ -23,7 +23,7 @@ def main():
 
     @st.cache(persist = True)
     def load_data():
-        data = pd.read_csv('mushrooms (1).csv')
+        data = pd.read_csv('mushrooms.csv')
         label = LabelEncoder()
 
         for col in data.columns:
