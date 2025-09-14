@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import streamlit as st
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
@@ -23,7 +17,7 @@ def main():
 
     @st.cache(persist = True)
     def load_data():
-        data = pd.read_csv('mushrooms (1).csv')
+        data = pd.read_csv('mushrooms.csv')
         label = LabelEncoder()
 
         for col in data.columns:
@@ -122,4 +116,3 @@ def main():
     
 if __name__ == '__main__':
     main()
-
